@@ -1,35 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="burger_icon.ico" rel="shortcut icon">
-    <title>Eatery Menu</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            background-color: rgb(26, 26, 26);
-        }
-        body {
-            background-color: rgb(26, 26, 26);
-            overflow-y: hidden;
-        }
-         .menu {
-            height: 85vh;
-            padding-bottom: 10px;
-        }
-        img {
-            height: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="burger_icon.ico" rel="shortcut icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <title>Eatery Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      background-color: rgb(26, 26, 26);
+    }
+    body {
+      background-color: rgb(26, 26, 26);
+      font-family: 'Roboto', sans-serif;
+    }
+    .menu {
+      box-sizing: border-box;
+      width: max-content;
+      height: 100vh;
+
+      padding-bottom: 30px;
+      position: relative;
+    }
+    img {
+      height: 100%;
+    }
+
+    .contact {
+      text-decoration: none;
+      color: #fff;
+      padding: 10px;
+      background-color: rgb(26, 26, 26);
+      font-weight: bold;
+      font-size: 18px;
+      position: absolute;
+      z-index: 9;
+    }
+    .insta {
+      right: 3.5%;
+      top: 13.5%;
+    }
+    .phone {
+      right: 2%;
+      top: 29%;
+    }
+  </style>
 </head>
 <body>
-    <div class="menu">
-        <img src="./menu.png" alt="menu">
-    </div>
+  <div class="menu">
+    <img src="./menu.png" alt="menu">
+    <a class="contact phone" href="tel:+375444912499">+375 (44) 491 24 99</a>
+    <a class="contact insta" target="_blanck" href="https://www.instagram.com/eatery.minsk/">eatery.minsk</a>
+  </div>
 </body>
 </html>
