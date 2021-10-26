@@ -26,44 +26,63 @@
       width: max-content;
       height: 100vh;
 
-      padding-bottom: 30px;
+      padding-bottom: 40px;
       position: relative;
     }
     img {
       height: 100%;
     }
 
+    .contact-wrapper {
+      position: fixed;
+      z-index: 9;
+      left: 10px;
+      bottom: 25px;
+    }
+
     .contact {
+      display: inline-block;
       text-decoration: none;
       color: #fff;
-      padding: 10px;
-      background-color: rgb(26, 26, 26);
+      margin-left: 30px;
+      margin-bottom: 5px;
+      padding-left: 25px;
       font-weight: bold;
       font-size: 2.5vh;
-      transform: translateX(50%);
-      position: absolute;
-      z-index: 9;
-      right: 6.15%;
+      white-space: nowrap;
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left center;
     }
     .insta {
-      top: 13vh;
+      background-image: url(./icons/insta.svg);
     }
     .phone {
-      top: 29vh;
+      background-image: url(./icons/phone.svg);
     }
     .review {
-      top: 40vh;
-      border: 1px solid #fff;
-      border-radius: 5px;
+      background-image: url(./icons/star.svg);
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        padding-bottom: 60px;
+      }
+      .contact-wrapper {
+        bottom: 15px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="menu">
-    <img src="./menu.png" alt="menu">
-    <a class="contact phone" href="tel:+375444912499">+375 (44) 491 24 99</a>
-    <a class="contact insta" target="_blanck" href="https://www.instagram.com/eatery.minsk/">eatery.minsk</a>
-    <a class="contact review" target="_blanck" href="https://taplink.cc/eatery.minsk">Оставить отзыв</a>
+    <img src="./menu.png" alt="Menu Eatery">
+    <div class="contact-wrapper">
+      <a class="contact phone" href="tel:+375444912499">+375 (44) 491 24 99</a>
+      <a class="contact insta" target="_blanck" href="https://www.instagram.com/eatery.minsk/">eatery.minsk</a>
+      <a class="contact review" target="_blanck" href="https://taplink.cc/eatery.minsk">Оставить отзыв</a>
+    </div>
   </div>
 </body>
 </html>
